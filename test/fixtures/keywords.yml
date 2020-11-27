@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword: MyString
+  synonyms: MyString
+  entity: MyString
+
+two:
+  keyword: MyString
+  synonyms: MyString
+  entity: MyString

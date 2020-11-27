@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Intents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Intent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @intents.each do |intent| %>
+      <tr>
+        <td><%= intent.intent %></td>
+        <td><%= link_to 'Show', intent %></td>
+        <td><%= link_to 'Edit', edit_intent_path(intent) %></td>
+        <td><%= link_to 'Destroy', intent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Intent', new_intent_path %>
