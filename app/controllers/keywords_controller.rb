@@ -21,10 +21,10 @@ class KeywordsController < ApplicationController
     #   client.post_entities_keywords("address", data)
     #
 
-    obj = GFG.new
+    obj = WITC.new
 
     # calling method using object
-    obj.geeks
+    obj.create_keyword(params[:key],params[:syn])
     @keywords = Keyword.all
 
   end
